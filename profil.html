@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Food Delivery Online</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="layout.css"  type="text/css" >
+		<style type="text/css">
+
+.dropmenu {
+    background: #111111;
+    height: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+	float:center;
+	width:100%;
+}
+.dropmenu li {
+    border-right: solid 1px white;
+    float: left;
+    height: 30px;
+}
+.dropmenu li a {
+    color: #fff;
+    display: block;
+    font: 12px arial, verdana, sans-serif;
+    font-weight: bold;
+    padding: 9px 20px;
+    text-decoration: none;
+}
+.dropmenu li:hover { background: #778899; position: relative; }
+.dropmenu li:hover a { text-decoration: underline; }
+.dropmenu li:hover ul {
+    background-color: #3f4a54;
+    border: 1px solid grey;
+    left: 0px;
+    padding: 3px;
+    top: 30px;
+    width: 160px;
+}
+.dropmenu li:hover ul li { border: none; height: 18px; }
+.dropmenu li:hover ul li a {
+    background-color: #778899;
+    border: 1px solid transparent;
+    color: #fff;
+    display: block;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0px;
+    text-decoration: none;
+    text-indent: 5px;
+    width: 158px;
+    padding: 3px;
+}
+.dropmenu li:hover ul li a:hover {
+    background: silver;
+    border: solid 1px #444;
+    color: #000;
+    height: 18px;
+    padding: 3px;
+}
+.dropmenu ul {
+    left: -9999px;
+    list-style-type: none;
+    position: absolute;
+    top: -9999px;
+}
+
+
+</style>
+	</head>
+	<body>
+		<div id="header">
+                    <img src="head.png" width="90%" height="100%" />
+                
+        </div>
+            <div>
+            <ul class ="dropmenu">
+            <li><a href ="home.html">Beranda</a></li>
+            <li ><a href ="#"> Info</a> <ul>
+            <li><a href ="carapesan.html">Cara Pesan</a></li>           
+                <li><a href ="tentang.html">Tentang</a></li></ul>
+                <li ><a href ="#"> Akun</a> 
+  <ul>
+    <li ><a href ="profil.html"> Profil</a> </li>
+    <li ><a href ="index.php"> Logout</a>   </li>   
+        </ul></li>
+        </ul>
+    
+       <form id="cari">
+                <input id="search" type="text" placeholder="Apa yang Anda cari?">
+                <input id="tombol" type="button" value="Cari">
+            </form>
+        </div>
+				<div id="content">
+				
+        <form action="profil.php" method="post"></form>
+        <script>
+    function validasi(){
+    var namaValid=/^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/;
+    var emailValid=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    var nama=form.nama.value;
+    var email=form.email.value;
+    var no= '';
+
+    if(nama == ''){
+        no='-Nama harus diisi!\n';
+        }
+    if (nama != '' && !nama.match(namaValid)){
+        no += '-Nama Anda tidak valid\n';
+        }
+    if(email == ''){
+        no += '-E-Mail harus diisi!\n';
+        }
+    if(email !='' && !email.match(emailValid)){
+        no += 'Alamat E-Mail Anda tidak valid\n';
+        }
+    if(no != ''){
+        alert('Maaf, ada kesalahan pengisian : \n'+no);
+        return false;
+        }
+        return true
+        }
+    </script>
+        <fieldset>
+        <legend>Profil</legend>
+        <p><label>Nama </label><br>
+        <input type="text" name="nama"></p>
+        <p><label>Alamat</label><br><input type="text" name="Alamat"></p>
+        <p><label>Email</label><br><input type="text" name = "email"></p>
+        <p><label>Nomor Handphone/Whatsapp : </label><br><input type="text" name="no"></p>
+        <p><input type="submit" value="Simpan"></p>
+				</div>
+			<div id="footer">@Food Delivery Online 2017</div>
+		</body></html>

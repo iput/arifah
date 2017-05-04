@@ -1,0 +1,116 @@
+#header		{
+				background-color:#dadada;
+				float:center;
+				text-align:center;
+				padding-left:10px;
+				height:100px;
+				z-index:3;
+				overflow:hidden;
+			}
+#cari{
+				float:right;
+}
+
+ #tombol {
+                    position:relative;
+                    left:-4px;
+                    padding:5px 15px;
+                    border:0px solid #ff6600;
+                    background-color: #ff6600;
+                    color:#fafafa;
+                    font-weight:bold;
+                    float:right;
+					 
+                 
+              }
+              #search{
+				
+                    padding:3px 30px;
+                    background: #fafafa;
+                    border:2px solid #ff6600;
+                    float:left;
+}
+#content	{
+				
+				text-align:center;
+				height:540px;
+				width:100%;
+				padding:5px;
+				margin-right:6px;
+				z-index:4px;
+				font-size:12px;
+				background-color:#ffcc00;
+			}
+
+#footer		{
+				clear:both;
+				height:10%;
+				width:100%;
+				z-index:7;
+				background-color:#dadada;
+				font-size:11px;
+				text-align:center;
+				font-weight:bolder;
+
+
+}
+.dropmenu2 {
+    background: #111111;
+    height: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+	float:center;
+	width:100%;
+}
+.dropmenu2 li {
+    border-right: solid 1px white;
+    float: right;
+    height: 30px;
+}
+.dropmenu2 li a {
+    color: #fff;
+    display: block;
+    font: 12px arial, verdana, sans-serif;
+    font-weight: bold;
+    padding: 9px 20px;
+    text-decoration: none;
+}
+.dropmenu2 li:hover { background: #778899; position: relative; }
+.dropmenu2 li:hover a { text-decoration: underline; }
+.dropmenu2 li:hover ul {
+    background-color: #3f4a54;
+    border: 1px solid grey;
+    right:  0px;
+    padding: 3px;
+    top: 30px;
+    width: 160px;
+}
+.dropmenu2 li:hover ul li { border: none; height: 18px; }
+.dropmenu2 li:hover ul li a {
+    background-color: #778899;
+    border: 1px solid transparent;
+    color: #fff;
+    display: block;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0px;
+    text-decoration: none;
+    text-indent: 5px;
+    width: 158px;
+    padding: 3px;
+}
+.dropmenu2 li:hover ul li a:hover {
+    background: silver;
+    border: solid 1px #444;
+    color: #000;
+    height: 18px;
+    padding: 3px;
+}
+.dropmenu2 ul {
+    right: -9999px;
+    list-style-type: none;
+    position: absolute;
+    top: -9999px;
+}

@@ -1,0 +1,46 @@
+html{
+	font-family: calibri;
+	float: center;
+	text-align: center;
+}
+body{
+	margin:10px;
+}
+form{
+	margin-top:10%;
+	width: 100%;
+}
+input[type="text"], input[type="password"], select{
+	background: #FFF;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 400px;
+}
+input[type="submit"]{
+	background: #ade7e7;
+	padding: 10px;
+	font-size: 20px;
+	border:1px solid #448086;
+	margin-bottom: 10px;
+}
+input[type="submit"]:hover{
+background: #55c0c6;
+}
+.peringatan{
+	background: #d0203a;
+	padding: 10px;
+	border: 1px solid darkred;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	width: 500px;
+}
+a{
+	color: #648da2;
+	font-size: 40px;
+	text-decoration: none;
+}
+a:hover{
+	color:#33636c;
+}
